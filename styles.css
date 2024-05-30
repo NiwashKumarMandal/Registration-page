@@ -60,12 +60,32 @@ input {
   border-radius: 5px;
   font-size: 12px;
   margin-bottom: 15px;
-  transition: border-color 0.3s ease-out;
+  transition: border-color 0.3s ease-out , box-shadow 0.3s ease-out;
 }
 
-input:focus,
-input:valid {
+input:focus {
   border-color: #9b59b6;
+  outline: none;
+  box-shadow: 0 0 8px rgba(150, 83, 140, 0.5);
+}
+
+input:hover{
+    border-color: #9b59b6;
+}
+
+#terms{
+    margin: 0;
+    height: 12px;
+    width: 12px;
+    display: inline;
+}
+
+.checkbox label{
+    display: inline;
+}
+
+.checkbox{
+    margin-bottom: 10px;
 }
 
 button {
@@ -102,10 +122,10 @@ button:hover {
     font-size: 12px;
     margin-bottom: 4px;
   }
-  button{
-    margin-top: 18px;
+  button {
+    margin-top: 10px;
   }
-  label{
-    font-size: .9em;
+  label {
+    font-size: 0.9em;
   }
 }
